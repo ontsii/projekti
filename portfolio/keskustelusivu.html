@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,15 +11,15 @@
     </header>
 
     <nav>
-        <ul>
-            <li><a href="../index.html">Etusivu</a></li>
-            <li><a href="../tyokokemus.html">Työkokemus</a></li>
-            <li><a href="index.html">Portfolio</a></li>
-        </ul>
+        <a href="../index.html">Etusivu</a>
+        <a href="../tyokokemus.html">Työkokemus</a>
+        <a href="index.html">Portfolio</a>
     </nav>
 
     <main>
-        <section>
+        <button id="open-dialog">Kommentoi</button>
+
+        <dialog id="comment-dialog">
             <h2>Jätä kommentti sivusta</h2>
             <form>
                 <label for="email">Sähköpostiosoite:</label>
@@ -43,8 +43,9 @@
                 </label><br><br>
 
                 <button type="submit">Lähetä</button>
+                <button type="button" id="close-dialog">Sulje</button>
             </form>
-        </section>
+        </dialog>
 
         <section>
             <h2>Aikaisemmat kommentit</h2>
@@ -66,5 +67,18 @@
         </section>
     </main>
 
+    <script>
+        const dialog = document.getElementById('comment-dialog');
+        const openDialogButton = document.getElementById('open-dialog');
+        const closeDialogButton = document.getElementById('close-dialog');
+
+        openDialogButton.addEventListener('click', () => {
+            dialog.showModal();
+        });
+
+        closeDialogButton.addEventListener('click', () => {
+            dialog.close();
+        });
+    </script>
 </body>
 </html>
