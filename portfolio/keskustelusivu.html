@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keskustelusivu</title>
+</head>
+<body>
+    <header>
+        <h1>Keskustelusivu</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Etusivu</a></li>
+            <li><a href="../tyokokemus.html">Työkokemus</a></li>
+            <li><a href="index.html">Portfolio</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Jätä kommentti sivusta</h2>
+            <form>
+                <label for="email">Sähköpostiosoite:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="birthdate">Syntymäpäivä:</label>
+                <input type="date" id="birthdate" name="birthdate" required><br><br>
+
+                <label for="message-type">Viestin tyyppi:</label>
+                <select id="message-type" name="message-type">
+                    <option value="question">Kysymys</option>
+                    <option value="comment">Kommentti</option>
+                </select><br><br>
+
+                <label for="comment">Kommentti:</label><br>
+                <textarea id="comment" name="comment" rows="5" cols="40" required></textarea><br><br>
+
+                <label>
+                    <input type="checkbox" id="consent" name="consent" required>
+                    Annan suostumukseni tietojen käyttöön markkinoinnissa
+                </label><br><br>
+
+                <button type="submit">Lähetä</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Aikaisemmat kommentit</h2>
+            <article>
+                <p><strong>Kommentti:</strong> Kiva! </p>
+                <p><strong>Lähetyspäivä ja -aika:</strong> 15.4.2025 klo 14:30</p>
+                <p><strong>Sähköposti:</strong> juuh@example.com</p>
+            </article>
+            <article>
+                <p><strong>Kommentti:</strong> Jippiii!!!.</p>
+                <p><strong>Lähetyspäivä ja -aika:</strong> 16.4.2025 klo 10:15</p>
+                <p><strong>Sähköposti:</strong> huhuu@example.com</p>
+            </article>
+            <article>
+                <p><strong>Kommentti:</strong> Ei.</p>
+                <p><strong>Lähetyspäivä ja -aika:</strong> 17.4.2025 klo 09:00</p>
+                <p><strong>Sähköposti:</strong> häh@example.com</p>
+            </article>
+        </section>
+    </main>
+
+</body>
+</html>
