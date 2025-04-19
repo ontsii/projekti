@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Työkokemus</title>
+    <script>
+        function toggleDescription(id) {
+            const description = document.getElementById(id);
+            if (description.style.display === "none" || description.style.display === "") {
+                description.style.display = "block";
+            } else {
+                description.style.display = "none";
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -21,25 +31,28 @@
     <main>
         <section>
             <article>
-                <h2>DNA</h2>
-                <p><strong>Tehtävät:</strong> Virheellisten tietojen korjaaminen tietokannasta</p>
-                <p><strong>Aika:</strong> 30.6.2023 - 7.7.2023</p>
+                <h2 onclick="toggleDescription('dna-description')">DNA (30.6.2023 - 7.7.2023)</h2>
+                <div id="dna-description" style="display: none;">
+                    <p><strong>Tehtävät:</strong> Virheellisten tietojen korjaaminen tietokannasta</p>
+                </div>
             </article>
         </section>
 
         <section>
             <article>
-                <h2>K-market</h2>
-                <p><strong>Tehtävät:</strong> Hyllyjen täyttämistä, pakketien hyllyttäminen</p>
-                <p><strong>Aika:</strong> 5.5.2024 - 18.5.2024</p>
+                <h2 onclick="toggleDescription('kmarket-description')">K-market (5.5.2024 - 18.5.2024)</h2>
+                <div id="kmarket-description" style="display: none;">
+                    <p><strong>Tehtävät:</strong> Hyllyjen täyttämistä, pakettien hyllyttäminen</p>
+                </div>
             </article>
         </section>
 
         <section>
             <article>
-                <h2>Arnolds</h2>
-                <p><strong>Tehtävät:</strong> Raaka-ainesten valmistaminen, myymälän siivous ja järjestely</p>
-                <p><strong>Aika:</strong> 12.1.2023 - 26.1.2023</p>
+                <h2 onclick="toggleDescription('arnolds-description')">Arnolds (12.1.2023 - 26.1.2023)</h2>
+                <div id="arnolds-description" style="display: none;">
+                    <p><strong>Tehtävät:</strong> Raaka-ainesten valmistaminen, myymälän siivous ja järjestely</p>
+                </div>
             </article>
         </section>
     </main>
