@@ -4,16 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Työkokemus</title>
-    <script>
-        function toggleDescription(id) {
-            const description = document.getElementById(id);
-            if (description.style.display === "none" || description.style.display === "") {
-                description.style.display = "block";
-            } else {
-                description.style.display = "none";
-            }
-        }
-    </script>
 </head>
 <body>
     <header>
@@ -31,34 +21,30 @@
     <main>
         <section>
             <article>
-                <h2 onclick="toggleDescription('dna-description')">DNA (30.6.2023 - 7.7.2023)</h2>
-                <div id="dna-description" style="display: none;">
+                <details>
+                    <summary>DNA (30.6.2023 - 7.7.2023)</summary>
                     <p><strong>Tehtävät:</strong> Virheellisten tietojen korjaaminen tietokannasta</p>
-                </div>
+                </details>
             </article>
         </section>
 
         <section>
             <article>
-                <h2 onclick="toggleDescription('kmarket-description')">K-market (5.5.2024 - 18.5.2024)</h2>
-                <div id="kmarket-description" style="display: none;">
+                <details>
+                    <summary>K-market (5.5.2024 - 18.5.2024)</summary>
                     <p><strong>Tehtävät:</strong> Hyllyjen täyttämistä, pakettien hyllyttäminen</p>
-                </div>
+                </details>
             </article>
         </section>
 
         <section>
             <article>
-                <h2 onclick="toggleDescription('arnolds-description')">Arnolds (12.1.2023 - 26.1.2023)</h2>
-                <div id="arnolds-description" style="display: none;">
+                <details>
+                    <summary>Arnolds (12.1.2023 - 26.1.2023)</summary>
                     <p><strong>Tehtävät:</strong> Raaka-ainesten valmistaminen, myymälän siivous ja järjestely</p>
-                </div>
+                </details>
             </article>
         </section>
     </main>
-
-    <footer>
-        <p>&copy; Työkokemus</p>
-    </footer>
 </body>
 </html>
