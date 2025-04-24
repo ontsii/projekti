@@ -1,0 +1,31 @@
+body {
+    background-color: #c1b7cb;
+    margin-left: 64px;
+    margin-right: 64px;
+}
+h1 {
+   font-size: 60px;
+   color: #868f78;
+}
+h2 {
+    font-size: 48px;
+    color: #868f78;
+}
+h3 {
+    font-size: 32px;
+    color: #868f78;
+}
+h4 {
+    font-size: 18px;
+    color: #868f78;
+}
+h5, h6 {
+    color: #868f78;
+}
+p {
+    color: #50524d;
+}
+section {
+    border: 2px solid #5c5761;
+    background-color: #cfc8d6;
+}
