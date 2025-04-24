@@ -29,3 +29,19 @@ section {
     border: 2px solid #5c5761;
     background-color: #cfc8d6;
 }
+a:link {
+    color: #ab7d88
+}
+a:hover {
+    color: #ec9bae
+}
+a:visited {
+    color: rgb(128, 128, 128)
+}
+button {
+    background-color: #ab7d88;
+    color: white
+}
+button:hover {
+    background-color: #ec9bae;
+}
