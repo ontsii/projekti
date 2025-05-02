@@ -3,9 +3,32 @@ body {
     margin-left: 64px;
     margin-right: 64px;
 }
+@font-face {
+    font-family: "My Special Font";
+    src: url("./fontit/Delius/Delius-Regular.ttf");
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: "My Special Font";
+    src: url("./fontit/Delius/Delius-Regular.ttf");
+    font-weight: bold;
+  }
+
+@font-face {
+    font-family: "My Font";
+    src: url("./fontit/Mystery_Quest/MysteryQuest-Regular.ttf");
+    font-weight: normal;
+  }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "My Font";
+}
+p {
+    font-family: "My Special Font";
+}
 h1 {
-   font-size: 60px;
-   color: #868f78;
+    font-size: 60px;
+    color: #868f78;
 }
 h2 {
     font-size: 48px;
@@ -29,6 +52,9 @@ section {
     border: 2px solid #5c5761;
     background-color: #cfc8d6;
 }
+a {
+    font-family: "My Special Font";
+}
 a:link {
     color: #ab7d88
 }
@@ -44,4 +70,8 @@ button {
 }
 button:hover {
     background-color: #ec9bae;
+}
+li {
+    font-family: "My Special Font";
+    color: #50524d;
 }
