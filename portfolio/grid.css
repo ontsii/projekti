@@ -1,13 +1,15 @@
 .container {
     display: grid;
-    grid-template-areas: 
-        "header header header"
-        "nav nav nav"
+    grid-template-areas:
+        "header header"
+        "nav nav"
         "menu content"
-        "footer footer footer";
-     gap: 5px;
-     padding: 5px;
+        "footer footer";
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 200px 1fr;
+    height: 100vh;
 }
+
 .container > div {
     padding: 10px;
     border: 2px solid #5c5761;
@@ -21,6 +23,7 @@
     grid-area: nav;
     text-align: center;
 }
+
 .container > div.menu {
     grid-area: menu;
     text-align: center;
