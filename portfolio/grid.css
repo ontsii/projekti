@@ -5,34 +5,54 @@
         "nav nav"
         "menu content"
         "footer footer";
-    grid-template-rows: auto auto 1fr auto;
-    grid-template-columns: 200px 1fr;
-    height: 100vh;
+    max-width: 1000px; 
+    gap: 3px; 
 }
 
 .container > div {
     padding: 10px;
     border: 2px solid #5c5761;
+    border-radius: 10px;
     background-color: #cfc8d6;
 }
+
 .container > div.header {
     grid-area: header;
-    text-align: center;
+    text-align: left;
+    padding: 1em 3em;
 }
+
 .container > div.nav {
     grid-area: nav;
-    text-align: center;
+    text-align: left;
+    padding: 1em 3em;
+}
+.container > div.nav a {
+    margin-right: 3em;
 }
 
 .container > div.menu {
     grid-area: menu;
-    text-align: center;
+    text-align: left;
+    padding: 2em 3em;
 }
+.container > div.menu a {
+    margin-bottom: 2em;
+    display: block;
+}
+
 .container > div.content {
     grid-area: content;
-    text-align: center;
+    text-align: left;
+    padding: 3em 5em; 
 }
+
 .container > div.footer {
     grid-area: footer;
     text-align: center;
+    padding: 3em; 
 }
+.container > div.footer a {
+    padding: 2em;
+}
+
