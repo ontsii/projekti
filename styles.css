@@ -75,3 +75,31 @@ li {
     font-family: "My Special Font";
     color: #50524d;
 }
+
+@media (max-width: 640px) {
+    body {
+        margin-left: 16px; 
+        margin-right: 16px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    .nav nav a {
+        display: block; 
+        margin-bottom: 8px;
+    }
+}
