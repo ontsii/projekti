@@ -1,0 +1,1 @@
+console.log("työkokemus sivu avattu");
