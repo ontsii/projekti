@@ -38,17 +38,17 @@
         
                 <dialog id="comment-dialog">
                     <h2>Jätä kommentti sivusta</h2>
-                    <form>
+                    <form method="dialog">
                         <label for="email">Sähköpostiosoite:</label>
-                        <input type="email" id="email" name="email" required><br><br>
+                        <input type="email" id="Sähköposti" name="email" required><br><br>
         
                         <label for="birthday">Syntymäpäivä:</label>
-                        <input type="date" id="birthdate" name="birthday" required><br><br>
+                        <input type="date" id="syntymäpäivä" name="birthday" required><br><br>
         
                         <label for="message-type">Viestin tyyppi:</label>
-                        <select id="message-type" name="message-type">
-                            <option value="question">Kysymys</option>
-                            <option value="comment">Kommentti</option>
+                        <select id="tyyppi" name="message-type">
+                            <option value="kysymys">Kysymys</option>
+                            <option value="kommentti">Kommentti</option>
                         </select><br><br>
         
                         <label for="comment">Kommentti:</label><br>
@@ -59,7 +59,7 @@
                             Annan suostumukseni tietojen käyttöön markkinoinnissa
                         </label><br><br>
         
-                        <button type="submit">Lähetä</button>
+                        <button type="button" onclick="send()">Lähetä</button>
                         <button type="button" id="close-dialog">Sulje</button>
                     </form>
                 </dialog>
