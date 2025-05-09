@@ -1,24 +1,26 @@
-console.log("työkokemus sivu avattu");
+console.log("Keskustelusivu avattu");
 
-function send() {
+function send(event) {
+    event.preventDefault();
+
     const birthdayField = document.getElementById("syntymäpäivä");
-    const emailField = document.getElementById("sähköposti");
+    const emailField = document.getElementById("Sähköposti");
     const typeField = document.getElementById("tyyppi");
-    const usageField = document.getElementById("usage");
-    const bodyField = document.getElementById("body");
+    const commentField = document.getElementById("comment");
+    const consentField = document.getElementById("consent");
 
     const birthday = birthdayField.value;
     const email = emailField.value;
     const type = typeField.value;
-    const usage = usageField.value;
-    const body = bodyField.value;
+    const comment = commentField.value;
+    const consent = consentField.checked;
 
     console.log("Syntymäpäivä:", birthday);
     console.log("Sähköposti:", email);
-    console.log("Tyyppi:", type);
-    console.log("Käyttö:", usage);
-    console.log("Viesti:", body);
+    console.log("Viestin tyyppi:", type);
+    console.log("Kommentti:", comment);
+    console.log("Suostumus:", consent ? "Kyllä" : "Ei");
 
-    const dialog = document.querySelector("dialog");
+    const dialog = document.getElementById("comment-dialog");
     dialog.close();
 }
