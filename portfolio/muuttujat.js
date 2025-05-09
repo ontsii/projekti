@@ -11,49 +11,30 @@ function kerto(a, b) {
 }
 
 function jako(a, b) {
-    if (b === 0) {
-        alert("Nollalla ei voi jakaa!");
-    } else {
-        alert(a / b);
-    }
+    alert(a / b);
 }
 
 function laskin_summa() {
     const eka = parseFloat(document.getElementById("numero1").value);
     const toka = parseFloat(document.getElementById("numero2").value);
-    if (!isNaN(eka) && !isNaN(toka)) {
-        summa(eka, toka);
-    } else {
-        alert("Syötä molemmat luvut!");
-    }
+    alert(eka + toka);
 }
 
 function laskin_vahennys() {
     const eka = parseFloat(document.getElementById("numero1").value);
     const toka = parseFloat(document.getElementById("numero2").value);
-    if (!isNaN(eka) && !isNaN(toka)) {
-        vahennys(eka, toka);
-    } else {
-        alert("Syötä molemmat luvut!");
-    }
+    alert(eka - toka);
 }
 
 function laskin_kerto() {
     const eka = parseFloat(document.getElementById("numero1").value);
     const toka = parseFloat(document.getElementById("numero2").value);
-    if (!isNaN(eka) && !isNaN(toka)) {
-        kerto(eka, toka);
-    } else {
-        alert("Syötä molemmat luvut!");
-    }
+    alert(eka * toka);
 }
 
 function laskin_jako() {
     const eka = parseFloat(document.getElementById("numero1").value);
     const toka = parseFloat(document.getElementById("numero2").value);
-    if (!isNaN(eka) && !isNaN(toka)) {
-        jako(eka, toka);
-    } else {
-        alert("Syötä molemmat luvut!");
-    }
+        alert(eka / toka);
+    
 }
