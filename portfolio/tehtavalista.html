@@ -13,7 +13,6 @@
     </head>
 
 <body>
-
     <div class="container">
         <div class="header">
             <header>
@@ -23,21 +22,18 @@
         <div class="nav">
             <nav>
                 <a href="../index.html">Etusivu</a>
-                <a href="../tyokokemus.html">Työkokemus</a>
-            </nav>
-        </div>
-        <div class="menu">
-            <nav>
-                <a href="flex.html">Flex-sivu</a>
-                <br><a href="keskustelusivu.html">Keskustelusivu</a>
-                <br><a href="muuttujat.html">Muuttujat</a>
-                <br><a href="tehtavalista.html">Tehtävälista</a>
+                <a href="index.html">Portfolio</a>
             </nav>
         </div>
         <div class="content">
-            <h1>Portfolio</h1>
-            <p>Tässä portfoliossa on web-ohjelmointikurssin harjoituksia</p>
+            <h1>Tehtävälista</h1>
+            <ul id="tehtavalista"></ul>
+            <input type="text" id="Tehtava" placeholder="Uusi tehtävä">
+            <button onclick="lisaa()">Lisää</button>
+            
         </div>
+        
+
         <div class="footer">
             <footer>
                 <a href="https://turku.inschool.fi/">Wilma</a>
@@ -45,7 +41,6 @@
                 <a href="https://tai.fi/">TAI</a>
             </footer>
         </div>
-    </div>
 
+    </div>
 </body>
-</html>
