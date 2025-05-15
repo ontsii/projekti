@@ -14,7 +14,7 @@ function paivitalista() {
 }
 
 function lisaa() {
-    const input = document.getElementById("tehtava");
+    const input = document.getElementById("uusiTehtava");
     const uusi = input.value.trim();
 
     if (uusi !== "") {
