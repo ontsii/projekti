@@ -7,12 +7,13 @@
         <meta name="description" content="minun portfolio, jossa esitellään web-ohjelmointikurssin harjoituksia.">
         <meta name="author" content="Oona, 17 vuotias opiskelija.">
         <title>Portfolio</title>
-        <script src="index.js" defer></script>
-        <link rel="stylesheet" href="grid.css">
+        <script src="tehtavalista.js" defer></script>
+        <link rel="stylesheet" href="grid2.css">
         <link rel="stylesheet" href="../styles.css">
     </head>
 
 <body>
+    
     <div class="container">
         <div class="header">
             <header>
@@ -26,14 +27,16 @@
             </nav>
         </div>
         <div class="content">
-            <h1>Tehtävälista</h1>
-            <ul id="tehtavalista"></ul>
-            <input type="text" id="Tehtava" placeholder="Uusi tehtävä">
-            <button onclick="lisaa()">Lisää</button>
-            
+            <section>
+                <h1>Tehtävälista</h1>
+                
+                <ul id="tehtavalista"></ul>
+                
+                <input type="text" id="Tehtava" placeholder="Uusi tehtävä">
+                <button onclick="lisaa()">Lisää</button>
+            </section>
         </div>
         
-
         <div class="footer">
             <footer>
                 <a href="https://turku.inschool.fi/">Wilma</a>

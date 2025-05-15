@@ -1,19 +1,27 @@
-let lista = ["Tehtävä 1", "Tehtävä 2"];
+console.log("Tehtävälista avattu");
 
-function paivitaLista() {
+let lista = ["Tehtävä 1", "Tehtävä 2"]
+
+function paivitalista() {
     const ul = document.getElementById("tehtavalista");
-    ul.innerHTML = lista.map(tehtava => `<li>${tehtava}</li>`).join("");
-}
+    ul.innerHTML = "";
 
-function lisaa() {
-    const input = document.getElementById("Tehtava");
-    if (input.value.trim()) {
-        lista.push(input.value.trim());
-        paivitaLista();
-        input.value = "";
-    } else {
-        alert("Kirjoita ensin tehtävä!");
+    for (let tehtava of lista) {
+        const li = document.createElement("li");
+        li.textContent = tehtava;
+        ul.appendChild(li);
     }
 }
 
-paivitaLista();
+function lisaa() {
+    const input = document.getElementById("tehtava");
+    const uusi = input.value.trim();
+
+    if (uusi !== "") {
+        lista.push(uusi);
+        input.value = "";
+        paivitalista();
+    }
+}
+
+window.onload = paivitalista;
