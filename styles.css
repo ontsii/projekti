@@ -76,6 +76,7 @@ li {
     color: #50524d;
 }
 
+
 @media (max-width: 640px) {
     body {
         margin-left: 16px; 

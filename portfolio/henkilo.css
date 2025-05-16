@@ -37,6 +37,11 @@
     padding: 3em 5em; 
 }
 
+.container > div.content table {
+    margin: 0 auto;
+    text-align: center;
+
+}
 
 .container > div.footer {
     grid-area: footer;
@@ -45,4 +50,22 @@
 }
 .container > div.footer a {
     padding: 2em;
+}
+
+tr {
+    text-align: center;
+    padding: 1em;
+}
+td {
+    color: #50524d;
+    font-family: "My Special Font";
+    font-size: 18px;
+    padding: 3em, 5em;
+}
+
+th {
+    color: #413845;
+    font-family: "My Special Font";
+    font-weight: bold;
+    font-size: 24px;
 }
