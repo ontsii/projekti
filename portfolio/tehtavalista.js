@@ -14,19 +14,16 @@ function paivitalista() {
 }
 
 function lisaa() {
-    const input = document.getElementById("uusiTehtava");
-    const toistotinput = document.getElementById("toistot");
+    const input = document.getElementById("uusi");
+    const maara = parseInt(document.getElementById("toisto").value);
     const uusi = input.value.trim();
-    const toistot = parseInt(toistotinput.value);
 
-    if (uusi !== "" && toistot > 0) {
-        for (let i = 0; i < toistot; i++) {
-            lista.push(uusi);
-        }
+    if (uusi && maara > 0) {
+        lista.push(...Array(maara).fill(uusi));
         input.value = "";
-        toistotinput.value = "";
+        document.getElementById("toisto").value = "";
         paivitalista();
-    }
+    } 
 }
 
 window.onload = paivitalista;
