@@ -1,1 +1,1 @@
-console.log("flex sivu avattu");
+console.log("flex sivu avattu")
