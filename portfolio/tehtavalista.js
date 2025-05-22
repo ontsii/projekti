@@ -14,7 +14,7 @@ function paivitalista() {
 }
 
 function lisaa() {
-    const input = document.getElementById("uusi");
+    const input = document.getElementById("tehtava");
     const maara = parseInt(document.getElementById("toisto").value);
     const uusi = input.value.trim();
 
