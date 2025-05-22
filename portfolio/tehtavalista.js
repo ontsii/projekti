@@ -15,11 +15,16 @@ function paivitalista() {
 
 function lisaa() {
     const input = document.getElementById("uusiTehtava");
+    const toistotinput = document.getElementById("toistot");
     const uusi = input.value.trim();
+    const toistot = parseInt(toistotinput.value);
 
-    if (uusi !== "") {
-        lista.push(uusi);
+    if (uusi !== "" && toistot > 0) {
+        for (let i = 0; i < toistot; i++) {
+            lista.push(uusi);
+        }
         input.value = "";
+        toistotinput.value = "";
         paivitalista();
     }
 }
