@@ -34,6 +34,35 @@ const henkilot =
     },
 ]
 
+function laheta() {
+    const nimi = document.getElementById("nimi").value;
+    const ika = document.getElementById("ika").value;
+    const tyo = document.getElementById("tyo").value;
+    const ajokortti = document.getElementById("ajokortti").checked;
+
+    if (ika <= 0) {
+        alert("iän pitää olla positiivinen luku.");
+    }
+    else {
+        const henkilo = {
+            name: nimi,
+            age: ika,
+            job: tyo,
+            driversLicense: ajokortti ? true : false
+        };
+
+        henkilot.push(henkilo);
+        luoRivit();
+
+        document.getElementById("nimi").value = "";
+        document.getElementById("ika").value = "";
+        document.getElementById("tyo").value = "";
+        document.getElementById("ajokortti").checked = false;
+    }
+
+
+}
+
 function luoRivit() {
     const tbody = document.getElementById("rivit"); 
     tbody.innerHTML = ""; 
@@ -45,13 +74,13 @@ function luoRivit() {
         nimiTd.innerHTML = henkilo.name;
 
         const ikaTd = document.createElement("td");
-        ikaTd.innerHTML = henkilo.age;
+        ikaTd.innerHTML = henkilo.age >= 18 ? `${henkilo.age} 🍺` : henkilo.age;
 
         const tyoTd = document.createElement("td");
-        tyoTd.innerHTML = henkilo.job;
+        tyoTd.innerHTML = henkilo.job.toLowerCase() === "opiskelija" ? `${henkilo.job} 🎓` : henkilo.job;
 
         const ajokorttiTd = document.createElement("td");
-        ajokorttiTd.innerHTML = henkilo.driversLicense ? "Kyllä" : "Ei";
+        ajokorttiTd.innerHTML = henkilo.driversLicense ? "true" : "false";
 
         rivi.append(nimiTd, ikaTd, tyoTd, ajokorttiTd);
 
