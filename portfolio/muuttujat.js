@@ -38,3 +38,7 @@ function laskin_jako() {
         alert(eka / toka);
     
 }
+
+function paivamaara() {
+    new Date();
+}
