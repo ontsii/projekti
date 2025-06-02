@@ -10,7 +10,7 @@
         <title>Kasino</title>
         <script src="kasino.js" defer></script>
         <link rel="stylesheet" href="../styles.css">
-        <link rel="stylesheet" href="grid.css">
+        <link rel="stylesheet" href="../grid2.css">
     </head>
 
     <body>
@@ -23,33 +23,42 @@
 
             <div class="nav">
                 <nav>
-                    <a href="../index.html">Etusivu</a>
-                    <a href="index.html">Portfolio</a>
+                    <a href="../../index.html">Etusivu</a>
+                    <a href="../index.html">Portfolio</a>
                 </nav>
             </div>
 
             <div class="content">
                 <main>
-                    <!-- Kasinopelin sisältö -->
-                    <h2>Tervetuloa kasinolle!</h2>
-                    <p>Valitse peli ja yritä voittaa rahaa!</p>
+                    <div class="button-row">
+                        <button onclick="arvoNoppa()">Noppa</button>
+                        <div id="noppa"></div>
+                    </div>
 
-                    <!-- Pelivalikko -->
-                    <select id="game-select">
-                        <option value="">Valitse peli</option>
-                        <option value="kolikkopelit">Kolikkopelit</option>
-                        <option value="ruletti">Ruletti</option>
-                        <option value="blackjack">Blackjack</option>
-                    </select>
+                    <div class="lotto-inputs">
+                        <input type="number" min="1" max="40" id="lotto1">
+                        <input type="number" min="1" max="40" id="lotto2">
+                        <input type="number" min="1" max="40" id="lotto3">
+                        <input type="number" min="1" max="40" id="lotto4">
+                        <input type="number" min="1" max="40" id="lotto5">
+                        <input type="number" min="1" max="40" id="lotto6">
+                        <input type="number" min="1" max="40" id="lotto7">
+                    </div>  
 
-                    <!-- Pelin aloituspainike -->
-                    <button id="start-game">Aloita peli</button>
-
-                    <!-- Pelin tulos -->
-                    <div id="game-result"></div>
-
+                    <div class="button-row">
+                        <button onclick="arvoLotto()">Lotto</button>
+                        <div id="lotto"></div>
+                    </div>
                 </main>
             </div>
 
-            <!-- Footer -->
-            <footer class="
+            <div class="footer">
+                <footer>
+                    <a href="https://turku.inschool.fi/">Wilma</a>
+                    <a href="https://taito.edu.turku.fi/">Moodle</a>
+                    <a href="https://tai.fi/">TAI</a>
+                </footer>
+            </div>
+        </div>
+    </body>
+                    
