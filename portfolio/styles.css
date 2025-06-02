@@ -93,6 +93,12 @@ button {
     
 }
 
+input[type="text"] {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
 button:hover {
     background-color: #ec9bae;
 }
