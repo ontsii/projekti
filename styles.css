@@ -5,7 +5,7 @@ body {
 }
 @font-face {
     font-family: "My Special Font";
-    src: url("./fontit/Delius/Delius-Regular.ttf");
+    src: url("projekti/fontit/Delius/Delius-Regular.ttf");
     font-weight: normal;
   }
   @font-face {

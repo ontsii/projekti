@@ -5,18 +5,18 @@ body {
 }
 @font-face {
     font-family: "My Special Font";
-    src: url("./fontit/Delius/Delius-Regular.ttf");
+    src: url("../fontit/Delius/Delius-Regular.ttf");
     font-weight: normal;
   }
   @font-face {
     font-family: "My Special Font";
-    src: url("./fontit/Delius/Delius-Regular.ttf");
+    src: url("../fontit/Delius/Delius-Regular.ttf");
     font-weight: bold;
   }
 
 @font-face {
     font-family: "My Font";
-    src: url("./fontit/Mystery_Quest/MysteryQuest-Regular.ttf");
+    src: url("../fontit/Mystery_Quest/MysteryQuest-Regular.ttf");
     font-weight: normal;
   }
 
