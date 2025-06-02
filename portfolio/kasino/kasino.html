@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="kasino, pelit, rahapelit">
+        <meta name="description" content="Kasino">
+        <meta name="author" content="Oona, 17 vuotias opiskelija.">
+        <title>Kasino</title>
+        <script src="kasino.js" defer></script>
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="stylesheet" href="grid.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <header>
+                    <h1>Oonan sivu</h1>
+                </header>
+            </div>
+
+            <div class="nav">
+                <nav>
+                    <a href="../index.html">Etusivu</a>
+                    <a href="index.html">Portfolio</a>
+                </nav>
+            </div>
+
+            <div class="content">
+                <main>
+                    <!-- Kasinopelin sisältö -->
+                    <h2>Tervetuloa kasinolle!</h2>
+                    <p>Valitse peli ja yritä voittaa rahaa!</p>
+
+                    <!-- Pelivalikko -->
+                    <select id="game-select">
+                        <option value="">Valitse peli</option>
+                        <option value="kolikkopelit">Kolikkopelit</option>
+                        <option value="ruletti">Ruletti</option>
+                        <option value="blackjack">Blackjack</option>
+                    </select>
+
+                    <!-- Pelin aloituspainike -->
+                    <button id="start-game">Aloita peli</button>
+
+                    <!-- Pelin tulos -->
+                    <div id="game-result"></div>
+
+                </main>
+            </div>
+
+            <!-- Footer -->
+            <footer class="
