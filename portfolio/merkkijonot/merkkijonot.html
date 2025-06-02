@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="kasino, pelit, rahapelit">
+        <meta name="description" content="Merkkijonot">
+        <meta name="author" content="Oona, 17 vuotias opiskelija.">
+        <title>Merkkijonot</title>
+        <script src="merkkijonot.js" defer></script>
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="stylesheet" href="../grid2.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <header>
+                    <h1>Oonan sivu</h1>
+                </header>
+            </div>
+
+            <div class="nav">
+                <nav>
+                    <a href="../../index.html">Etusivu</a>
+                    <a href="../index.html">Portfolio</a>
+                </nav>
+            </div>
+
+            <div class="content">
+                <main>
+                    <h1>Merkkijonot</h1>
+                    <section>
+                        <h2>Poimi kirjain</h2>
+                        <input type="text" id="merkkijono" placeholder="Syötä teksti">
+                        <input type="number" id="numero" placeholder="Syötä numero" min="1">
+                        <button onclick="poimiKirjain()">Näytä</button>
+                        <div id="tulos"></div>
+                    </section>
+
+                    <section>
+                        <h2>Löydä indeksi</h2>
+                        <input type="text" id="teksti" placeholder="Syötä teksti">
+                        <input type="text" id="kirjain" placeholder="Syötä kirjain" max="1">
+                        <button onclick="löydäIndeksi()">Näytä</button>
+                        <div id="indeksi"></div>
+                    </section>
+
+                    <section>
+                        <h2>Leikkaa merkkijono</h2>
+                        <input type="text" id="leikkaa-teksti" placeholder="Syötä teksti">
+                        <input type="number" id="leikkaa-alku" placeholder="Alku" min="1">
+                        <input type="number" id="leikkaa-loppu" placeholder="Loppu" min="1">
+                        <button onclick="leikkaaMerkkijono()">Näytä</button>
+                        <div id="leikkaa-tulos"></div>
+                    </section>
+
+                    <section>
+                        <h2>Etsi ja korvaa</h2>
+                        <input type="text" id="etsi-teksti" placeholder="Syötä teksti">
+                        <input type="text" id="haettava" placeholder="Etsi">
+                        <input type="text" id="korvaus" placeholder="Korvaa">
+                        <button onclick="etsiJaKorvaa()">Näytä</button>
+                        <div id="korvaus-tulos"></div>
+                    </section>
+
+                    <section>
+                        <h2>Poikki ja pinoon</h2>
+                        <input type="text" id="poikki-teksti" placeholder="Syötä teksti">
+                        <input type="text" id="poikki-erotin" placeholder="Erotin">
+                        <button onclick="poikkiJaPinoon()">Näytä</button>
+                        <ul id="poikki-tulos"></ul>
+                    </section>
+                </main>
+            </div>
+
