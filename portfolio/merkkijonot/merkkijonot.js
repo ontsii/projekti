@@ -1,61 +1,40 @@
-function poimiKirjain() {
-    const teksti = document.getElementById("merkkijono").value;
-    const kohta = parseInt(document.getElementById("kohta").value, 10);
-    const tulosDiv = document.getElementById("tulos");
+console.log("Merkkijonot ladattu");
 
-    if (teksti && kohta >= 1 && kohta <= teksti.length) {
-        tulosDiv.textContent = teksti[kohta - 1];
-    } else {
-        tulosDiv.textContent = "";
-    }
+function poimiKirjain() {
+    let teksti = document.getElementById("teksti1").value;
+    let indeksi = Number(document.getElementById("indeksi1").value);
+    document.getElementById("tulos1").innerText = teksti.charAt(indeksi);
 }
 
 function loydaIndeksi() {
-    const teksti = document.getElementById("teksti").value;
-    const kirjain = document.getElementById("kirjain").value;
-    const indeksiDiv = document.getElementById("indeksi");
-    const indeksi = teksti.indexOf(kirjain);
-    indeksiDiv.textContent = indeksi;
+    let lause = document.getElementById("teksti2").value;
+    let haku = document.getElementById("etsittava").value;
+    document.getElementById("tulos2").innerText = lause.indexOf(haku);
 }
 
 function leikkaaMerkkijono() {
-    const teksti = document.getElementById("leikkaa-teksti").value;
-    const alku = parseInt(document.getElementById("leikkaa-alku").value, 10);
-    const loppu = parseInt(document.getElementById("leikkaa-loppu").value, 10);
-    const tulosDiv = document.getElementById("leikkaa-tulos");
-
-    if (teksti && alku >= 1 && loppu >= alku && loppu <= teksti.length) {
-        tulosDiv.textContent = teksti.slice(alku - 1, loppu);
-    } else {
-        tulosDiv.textContent = "";
-    }
+    let teksti = document.getElementById("teksti3").value;
+    let alku = Number(document.getElementById("alku").value);
+    let loppu = Number(document.getElementById("loppu").value);
+    document.getElementById("tulos3").innerText = teksti.slice(alku, loppu);
 }
 
 function etsiJaKorvaa() {
-    const teksti = document.getElementById("etsi-teksti").value;
-    const haettava = document.getElementById("haettava").value;
-    const korvaus = document.getElementById("korvaus").value;
-    const tulosDiv = document.getElementById("korvaus-tulos");
-
-    if (haettava) {
-        tulosDiv.textContent = teksti.replaceAll(haettava, korvaus);
-    } else {
-        tulosDiv.textContent = teksti;
-    }
+    let alkuperainen = document.getElementById("teksti4").value;
+    let etsittava = document.getElementById("etsittava4").value;
+    let korvaus = document.getElementById("korvaus").value;
+    document.getElementById("tulos4").innerText = alkuperainen.replaceAll(etsittava, korvaus);
 }
 
 function poikkiJaPinoon() {
-    const teksti = document.getElementById("poikki-teksti").value;
-    const erotin = document.getElementById("poikki-erotin").value;
-    const ul = document.getElementById("poikki-tulos");
-    ul.innerHTML = "";
-
-    if (erotin === "") return;
-
-    const osat = teksti.split(erotin);
+    let teksti = document.getElementById("teksti5").value;
+    let erotin = document.getElementById("erotin").value;
+    let osat = teksti.split(erotin);
+    let tulosLista = document.getElementById("tulos5");
+    tulosLista.innerHTML = "";
     osat.forEach(osa => {
-        const li = document.createElement("li");
-        li.textContent = osa;
-        ul.appendChild(li);
+        let li = document.createElement("li");
+        li.innerText = osa;
+        tulosLista.appendChild(li);
     });
 }

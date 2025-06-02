@@ -33,44 +33,44 @@
                     <h1>Merkkijonot</h1>
                     <section>
                         <h2>Poimi kirjain</h2>
-                        <input type="text" id="merkkijono" placeholder="Syötä teksti">
-                        <input type="number" id="numero" placeholder="Syötä numero" min="1">
+                        <input type="text" id="teksti1" placeholder="Syötä teksti">
+                        <input type="number" id="indeksi1" placeholder="Syötä indeksi">
                         <button onclick="poimiKirjain()">Näytä</button>
-                        <div id="tulos"></div>
+                        <div id="tulos1"></div>
                     </section>
 
                     <section>
                         <h2>Löydä indeksi</h2>
-                        <input type="text" id="teksti" placeholder="Syötä teksti">
-                        <input type="text" id="kirjain" placeholder="Syötä kirjain" max="1">
-                        <button onclick="löydäIndeksi()">Näytä</button>
-                        <div id="indeksi"></div>
+                        <input type="text" id="teksti2" placeholder="Koko teksti">
+                        <input type="text" id="etsittava" placeholder="Etsittävä merkki/sana">
+                        <button onclick="loydaIndeksi()">Näytä</button>
+                        <div id="tulos2"></div>
                     </section>
 
                     <section>
                         <h2>Leikkaa merkkijono</h2>
-                        <input type="text" id="leikkaa-teksti" placeholder="Syötä teksti">
-                        <input type="number" id="leikkaa-alku" placeholder="Alku" min="1">
-                        <input type="number" id="leikkaa-loppu" placeholder="Loppu" min="1">
+                        <input type="text" id="teksti3" placeholder="Syötä teksti">
+                        <input type="number" id="alku" placeholder="Alkuindeksi">
+                        <input type="number" id="loppu" placeholder="Loppuindeksi">
                         <button onclick="leikkaaMerkkijono()">Näytä</button>
-                        <div id="leikkaa-tulos"></div>
+                        <div id="tulos3"></div>
                     </section>
 
                     <section>
                         <h2>Etsi ja korvaa</h2>
-                        <input type="text" id="etsi-teksti" placeholder="Syötä teksti">
-                        <input type="text" id="haettava" placeholder="Etsi">
-                        <input type="text" id="korvaus" placeholder="Korvaa">
+                        <input type="text" id="teksti4" placeholder="Syötä teksti">
+                        <input type="text" id="etsittava4" placeholder="Etsi tämä">
+                        <input type="text" id="korvaus" placeholder="Korvaa tällä">
                         <button onclick="etsiJaKorvaa()">Näytä</button>
-                        <div id="korvaus-tulos"></div>
+                        <div id="tulos4"></div>
                     </section>
 
                     <section>
                         <h2>Poikki ja pinoon</h2>
-                        <input type="text" id="poikki-teksti" placeholder="Syötä teksti">
-                        <input type="text" id="poikki-erotin" placeholder="Erotin">
+                        <input type="text" id="teksti5" placeholder="Syötä teksti">
+                        <input type="text" id="erotin" placeholder="Erotinmerkki">
                         <button onclick="poikkiJaPinoon()">Näytä</button>
-                        <ul id="poikki-tulos"></ul>
+                        <ul id="tulos5"></ul>
                     </section>
                 </main>
             </div>
