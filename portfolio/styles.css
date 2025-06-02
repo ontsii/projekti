@@ -49,18 +49,23 @@ p {
     color: #50524d;
 }
 section {
-    border: 2px solid #5c5761;
+    border: 3px solid #5c5761;
     background-color: #cfc8d6;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 section > h2 {
     font-size: 48px;
     color: #868f78;
     padding-left: 15px;
+    text-align: center;
 }
 section > h1 {
     font-size: 60px;
     color: #868f78;
     padding-left: 15px;
+    text-align: center;
 }
 a {
     font-family: "My Special Font";
@@ -74,10 +79,20 @@ a:hover {
 a:visited {
     color: rgb(128, 128, 128)
 }
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
 button {
     background-color: #ab7d88;
-    color: white
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    
 }
+
 button:hover {
     background-color: #ec9bae;
 }
