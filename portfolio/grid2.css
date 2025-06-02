@@ -28,7 +28,13 @@
     padding: 1em 3em;
 }
 .container > div.nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
     margin-right: 3em;
+    margin-bottom: 5px;
+
 }
 
 .container > div.content {

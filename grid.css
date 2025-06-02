@@ -24,10 +24,14 @@
     grid-area: nav;
     text-align: center;
     padding: 1em 3em;
-    align-content: center;
 }
 .container > div.nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
     margin-right: 3em;
+
 }
 .container > div.content {
     grid-area: main;
